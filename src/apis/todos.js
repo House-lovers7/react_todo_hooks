@@ -6,7 +6,7 @@ export const getAllTodosData = async () => {
   const response = await axios.get(todoDataUrl)
   return response.data
 }
-export const addTodoData = async () => {
+export const addTodoData = async (todo) => {
   const response = await axios.post(todoDataUrl, todo)
   return response.data
 }
